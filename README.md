@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python app/app.py
 ```
 
-Access the app at: `http://localhost:5000`
+Access the app at: `http://localhost:8085`
 
 ### Option 2: Run with Docker
 
@@ -57,10 +57,10 @@ Access the app at: `http://localhost:5000`
 docker build -t flask-app:latest .
 
 # Run the container
-docker run -p 5000:5000 flask-app:latest
+docker run -p 8085:5000 flask-app:latest
 ```
 
-Access the app at: `http://localhost:5000`
+Access the app at: `http://localhost:8085`
 
 ### Option 3: Run with Jenkins Pipeline
 
@@ -72,7 +72,7 @@ Access the app at: `http://localhost:5000`
 Jenkins will automatically:
 - Clone the code
 - Build Docker image
-- Run the container on port 8081
+- Run the container on port 8085
 
 ## API Endpoints
 
@@ -86,7 +86,7 @@ Jenkins will automatically:
 2. **Check Docker** - Verifies Docker installation
 3. **Build Docker Image** - Creates Docker image
 4. **Stop Old Container** - Stops running container
-5. **Run Container** - Starts new container on port 8081
+5. **Run Container** - Starts new container on port 8085
 
 ## Technologies Used
 
@@ -126,7 +126,7 @@ python app/app.py
 docker build -t flask-app .
 
 # Docker run
-docker run -p 5000:5000 flask-app
+docker run -p 8085:5000 flask-app
 
 # Jenkins pipeline
 # Set repository URL to this GitHub repo in Jenkins
