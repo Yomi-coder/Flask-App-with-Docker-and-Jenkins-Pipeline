@@ -11,6 +11,10 @@ pipeline {
         REPO_URL = "https://github.com/Yomi-coder/Flask-App-with-Docker-and-Jenkins-Pipeline.git"
     }
 
+    triggers {
+        githubPush()
+    }
+
     stages {
 
         stage('Checkout Code') {
