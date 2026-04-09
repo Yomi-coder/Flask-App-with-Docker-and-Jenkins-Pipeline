@@ -3,6 +3,9 @@ pipeline {
 
 
     agent any
+    triggers {
+        githubPush()
+    }
 
     environment {
         IMAGE_NAME = "flask-app-docker-jenkins"
@@ -11,9 +14,6 @@ pipeline {
         REPO_URL = "https://github.com/Yomi-coder/Flask-App-with-Docker-and-Jenkins-Pipeline.git"
     }
 
-    triggers {
-        githubPush()
-    }
 
     stages {
 
