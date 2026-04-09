@@ -45,7 +45,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh '$DOCKER run -d -p 8082:5000 --name $CONTAINER_NAME $IMAGE_NAME'
+                sh '$DOCKER run -d -p 8085:5000 --name $CONTAINER_NAME $IMAGE_NAME'
             }
         }
 
