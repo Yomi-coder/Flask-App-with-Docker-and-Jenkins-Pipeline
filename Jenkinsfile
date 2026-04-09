@@ -5,10 +5,10 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "devops-project/jenkins-project3"
-        CONTAINER_NAME = "jenkins-project3-container"
+        IMAGE_NAME = "Flask-App-with-Docker-and-Jenkins-Pipeline"
+        CONTAINER_NAME = "Flask-App-with-Docker-and-Jenkins-Pipeline-container"
         DOCKER = "docker"
-        REPO_URL = "https://github.com/Yomi-coder/jenkins-project3.git"
+        REPO_URL = "https://github.com/Yomi-coder/Flask-App-with-Docker-and-Jenkins-Pipeline.git"
     }
 
     stages {
