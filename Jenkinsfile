@@ -5,8 +5,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "Flask-App-with-Docker-and-Jenkins-Pipeline"
-        CONTAINER_NAME = "Flask-App-with-Docker-and-Jenkins-Pipeline-container"
+        IMAGE_NAME = "flask-app-docker-jenkins"
+        CONTAINER_NAME = "flask-app-docker-jenkins-container"
         DOCKER = "docker"
         REPO_URL = "https://github.com/Yomi-coder/Flask-App-with-Docker-and-Jenkins-Pipeline.git"
     }
